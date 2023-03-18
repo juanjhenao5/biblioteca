@@ -1,0 +1,9 @@
+body {
+    margin: 10fx;
+    padding: 10 fx;
+    
+}
+.TextSpace {
+    display: flex;
+    flex-direction: row;
+  }
