@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+   
+    <style>
+      .attribution {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img src="./assets/images/logo.svg" alt="" />
+      </div>
+
+      <nav>
+        <button id="menu-close">
+          <img src="./assets/images/icon-menu-close.svg" alt="" />
+        </button>
+
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+
+      <div class="menu-button">
+        <button id="menu-button">
+          <img src="./assets/images/icon-menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <div>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/image-web-3-desktop.jpg"
+          />
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+        </picture>
+
+        <article>
+          <h1>¿el nuevo futuro de la web 3.0?</h1>
+
+          <div>
+            <p>
+              Nos sumergimos en la próxima evolución de la web que pretende poner el
+               el poder de las plataformas de nuevo en manos del pueblo. Pero es
+               ¿realmente cumple su promesa?
+            </p>
+
+            <button>mas</button>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <h2>nuevo</h2>
+
+        <article>
+          <h3>carros de hidrogeno vs carros electricos</h3>
+          <p>¿Los automóviles impulsados por hidrógeno alguna vez alcanzarán a los vehículos eléctricos?</p>
+        </article>
+
+        <article>
+          <h3>Las desventajas del arte de la IA</h3>
+          <p>
+            ¿Cuáles son los posibles efectos adversos de la imagen de IA bajo demanda?
+             ¿generación?
+          </p>
+        </article>
+
+        <article>
+          <h3>¿Se está agotando la financiación de capital de riesgo?</h3>
+          <p>
+            La financiación privada de las empresas de capital de riesgo ha bajado un 50 % interanual. Echamos un vistazo a lo que
+             eso significa.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="cards">
+      <article>
+        <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+        <div>
+          <span>01</span>
+          <h4>Resurreccion de los Retro PCs</h4>
+          <p>¿Qué sucede cuando las PC viejas reciben actualizaciones modernas?</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/images/image-top-laptops.jpg" alt="" />
+        <div>
+          <span>02</span>
+          <h4>Top 10 portatilesde 2022</h4>
+          <p>Nuestras mejores selecciones para diversas necesidades y presupuestos.</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+        <div>
+          <span>03</span>
+          <h4>El crecimiento de los juegos</h4>
+          <p>Cómo la pandemia ha generado nuevas oportunidades.</p>
+        </div>
+      </article>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
