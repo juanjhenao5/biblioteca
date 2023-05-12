@@ -6,7 +6,6 @@
 
 body {
     background-color: #ededed; 
-    
 }
 
 .home {
@@ -30,12 +29,3 @@ body {
     background-color: #fff;
     margin: 20px;
 }
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("1fdsdfa33_1fds6ikoo_1e69b9ddbf2e7a3eceec5fcb828d4faf.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    }

@@ -3,265 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>taller</title>
 </head>
 <body>
+  <script src="operaciones.js"></script>
     <section class="home">
         <div class="in-flex"> taller</div>
-        <div class="in-flex">
-
-                    <button onclick="punto1()">Punto 1</button>
-                    <button onclick="punto2()">Punto 2</button>
-                    <button onclick="punto3()">Punto 3</button>
-                    <button onclick="punto4()">Punto 4</button>
-                    <button onclick="punto5()">Punto 5</button>
-                    <button onclick="punto6()">Punto 6</button>
-                    <button onclick="punto7()">Punto 7</button>
-                    <button onclick="punto8()">Punto 8</button>
-                    <button onclick="punto9()">Punto 9</button>
-                    <button onclick="punto10()">Punto 10</button>
-                    
-
-            
-             
-                
+        <div class="in-flex">  
             <div>
-                /* punto 1 */
-                <script>
-                    let nombre = prompt("¿Cuál es tu nombre?");
-                    let edad = prompt("¿Cuál es tu edad?");
-                    
-                    // Convertir la edad a un número
-                    edad = parseInt(edad);
-                    
-                    // Calcular la edad el próximo año
-                    let edadProximoAnio = edad + 1;
-                    
-                    // Mostrar el mensaje por consola usando template strings
-                    console.log(`Hola ${nombre}, tienes ${edad} años y el año que viene tendrás ${edadProximoAnio} años.`);
-                </script>
-                    
-                  
-                /* punto 2 */
-                <script>
-                     let figura = prompt("¿De qué figura quieres calcular el área? (triángulo, rectángulo o círculo)");
-                
-                if (figura === "triángulo") {
-                  let base = prompt("Ingresa la base del triángulo:");
-                  let altura = prompt("Ingresa la altura del triángulo:");
-                
-                  // Convertir las variables a números
-                  base = parseFloat(base);
-                  altura = parseFloat(altura);
-                
-                  // Calcular el área del triángulo
-                  let area = (base * altura) / 2;
-                
-                  console.log(`El área del triángulo es ${area}`);
-                } else if (figura === "rectángulo") {
-                  let base = prompt("Ingresa la base del rectángulo:");
-                  let altura = prompt("Ingresa la altura del rectángulo:");
-                
-                  // Convertir las variables a números
-                  base = parseFloat(base);
-                  altura = parseFloat(altura);
-                
-                  // Calcular el área del rectángulo
-                  let area = base * altura;
-                
-                  console.log(`El área del rectángulo es ${area}`);
-                } else if (figura === "círculo") {
-                  let radio = prompt("Ingresa el radio del círculo:");
-                
-                  // Convertir la variable a número
-                  radio = parseFloat(radio);
-                
-                  // Calcular el área del círculo
-                  let area = Math.PI * radio ** 2;
-                
-                  console.log(`El área del círculo es ${area}`);
-                } else {
-                  console.log("Lo siento, no reconozco esa figura.");
-                
-                }
-                
-                </script>
-               
-                /* punto 3 */
-                <script>
-                   let nume = prompt("Ingresa un número:");
-                
-                // Convertir la variable a número
-                nume = parseInt(numero);
-                
-                // Iterar desde 1 hasta el número ingresado
-                for (let i = 1; i <= numero; i++) {
-                  if (i % 2 === 0) {
-                    console.log(`${i} - es par`);
-                  } else {
-                    console.log(`${i} - es impar`);
-                  }
-                }
-                
-                </script>
-             
-                
-                /* punto 4 */
-                <script> 
-                let numero = prompt("Ingresa un número entero mayor que 1:");
-                
-                // Convertir la variable a número
-                numero = parseInt(numero);
-                
-                // Verificar si el número es mayor que 1
-                if (numero <= 1) {
-                  console.log("El número debe ser mayor que 1.");
-                } else {
-                  let esPrimo = true;
-                
-                  // Iterar desde 2 hasta el número - 1
-                  for (let i = 2; i < numero; i++) {
-                    if (numero % i === 0) {
-                      esPrimo = false;
-                      break;
-                    }
-                  }
-                
-                  // Mostrar el resultado
-                  if (esPrimo) {
-                    console.log(`${numero} es un número primo.`);
-                  } else {
-                    console.log(`${numero} no es un número primo.`);
-                  }
-                }
-                </script>
-                
-                /* punto 5 */
-                <script> 
-                let num = prompt("Ingresa un número entero mayor que cero:");
-                
-                // Convertir la variable a número
-                num = parseInt(numero);
-                
-                // Verificar si el número es mayor que cero
-                if (numero <= 0) {
-                  console.log("El número debe ser mayor que cero.");
-                } else {
-                  let factorial = 1;
-                
-                  // Iterar desde el número hasta 1
-                  for (let i = numero; i >= 1; i--) {
-                    factorial *= i;
-                  }
-                
-                  // Mostrar el resultado
-                  console.log(`El factorial de ${numero} es ${factorial}.`);
-                }
-                </script>
-                
-                
-                /* punto 6*/
-                <script> 
-                let suma = 0;
-                let contador = 0;
-                
-                while (suma <= 50) {
-                  let numero = parseInt(prompt("Ingresa un número:"));
-                  
-                  if (isNaN(numero)) {
-                    console.log("Debes ingresar un número válido.");
-                    continue;
-                  }
-                
-                  suma += numero;
-                  contador++;
-                }
-                
-                console.log(`El total acumulado es ${suma} y se han introducido ${contador} números.`);
-                </script>
-                
-                /* punto 7*/
-                <script> 
-                // Creamos el primer array
-                const numeros = [5, 9, 12, 7, 3];
-                
-                // Creamos los arrays vacíos para los números pares e impares
-                const pares = [];
-                const impares = [];
-                
-                // Recorremos el primer array y multiplicamos cada número por un número aleatorio entre 1 y 10
-                numeros.forEach(numero => {
-                  const aleatorio = Math.floor(Math.random() * 10) + 1; // Generamos un número aleatorio entre 1 y 10
-                  const resultado = numero * aleatorio; // Multiplicamos el número por el número aleatorio generado
-                  console.log(`${numero} x ${aleatorio} = ${resultado}`); // Mostramos la multiplicación y su resultado en la consola
-                  
-                  if (resultado % 2 === 0) { // Verificamos si el resultado es par
-                    pares.push(resultado); // Si es par, lo agregamos al array de pares
-                  } else {
-                    impares.push(resultado); // Si es impar, lo agregamos al array de impares
-                  }
-                });
-                
-                // Mostramos los arrays de pares e impares en la consola
-                console.log(`Números pares: ${pares}`);
-                console.log(`Números impares: ${impares}`);
-                </script>
-                
-                /* punto 8 */
-                <script>
-                const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-                
-                const dni = prompt("Introduce tu número de DNI:");
-                const dniNumber = parseInt(dni);
-                
-                if (dniNumber >= 0 && dniNumber <= 99999999) {
-                  const letraIndex = dniNumber % 23;
-                  const letraDNI = letras[letraIndex];
-                  console.log(`La letra correspondiente a tu DNI ${dni} es: ${letraDNI}`);
-                } else {
-                  console.log("El número de DNI introducido no es válido.");
-                }
-                 </script>
-                
-                /* punto 9*/
-                <script>
-                    const palabra = prompt("Introduce una palabra:");
-                    const longitud = palabra.length;
-                    
-                    let consonantes = 0;
-                    let vocales = 0;
-                    
-                    for (let i = 0; i < longitud; i++) {
-                      const letra = palabra.charAt(i).toLowerCase();
-                      if (/[aeiou]/.test(letra)) {
-                        vocales++;
-                      } else if (/[b-df-hj-np-tv-z]/.test(letra)) {
-                        consonantes++;
-                      }
-                    }
-                    
-                    console.log(`La palabra "${palabra}" tiene ${consonantes} consonantes, ${vocales} vocales y una longitud de ${longitud} caracteres.`);
-                     </script>
-                
-                /* punto 10 */
-                <script>
-                     const colores = ["azul", "amarillo", "rojo", "verde", "rosa"];
-                const colorUsuario = prompt("Introduce un color:");
-                
-                if (colores.includes(colorUsuario)) {
-                  console.log(`El color ${colorUsuario} se encuentra en el array.`);
-                } else {
-                  console.log(`El color ${colorUsuario} no se encuentra en el array.`);
-                }
-                </script>
-               
-                </div>
-            <div>lorem lorem lorem</div>
+              <a onclick="taller1()" href="">ejercio 1</a> 
+              <a onclick="taller2()" href="">ejercio 2</a> 
+              <a onclick="taller3()" href="">ejercio 3</a> 
+              <a onclick="taller4()" href="">ejercio 4</a> 
+              <a onclick="taller5()" href="">ejercio 5</a> 
+              <a onclick="taller6()" href="">ejercio 6</a> 
+              <a onclick="taller7()" href="">ejercio 7</a> 
+              <a onclick="taller8()" href="">ejercio 8</a> 
+              <a onclick="taller9()" href="">ejercio 9</a> 
+              <a onclick="taller10()" href="">ejercio 10</a> 
+            <div></div>
         </div>
     </section>
 </body>
+
 </html>
 
 
