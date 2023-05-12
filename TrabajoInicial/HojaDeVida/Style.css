@@ -5,15 +5,15 @@
 }
 
 body {
-    background-color: #ededed; 
-    height: 100vh;
+    background-color: rgb(255, 255, 255); 
+    background-color: #0a7f11b5; 
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("1f4af43pt_1f3qa8ckc_crop.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
 }
 
 .home {
@@ -28,12 +28,24 @@ body {
 .in-flex:first-child{
     flex: 2;
     padding: 25px;
-    background-color: #fff;
+    background-color: #f19174;
     margin: 20px;
     margin-bottom: 0px;
+    background-image: url("fondo-abstracto-lluvia-pixeles_23-2148384253.avif");
 }
 .in-flex div{
     padding: 25px;
-    background-color: #fff;
+    background-color: #b8cbde;
     margin: 20px;
+}
+.img{
+    border-radius: 200px;
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+    min-height: 100%;
+}
+.divSpace{
+    text-align: center;
+    font-size: 1.5rem;
 }
