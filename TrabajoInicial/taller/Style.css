@@ -1,31 +1,42 @@
-* {
-    padding: 0px;
-    margin: 0px;
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
     font-family: Century Gothic;
-}
-
-body {
+  }
+  
+  body {
     background-color: #ededed; 
-}
-
-.home {
+    background-image: url("1en126l90_1en11nlp5_favim-com-beautiful-color-fantasy-love-667451.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .home {
     display: flex;
     flex-wrap: wrap;
-}
-
-.in-flex{
+  }
+  
+  .in-flex {
     flex: 1;
     min-width: 250px;
-}
-.in-flex:first-child{
+    flex-direction: column; /* Agregar esta línea */
+  }
+  
+  .in-flex:first-child {
     flex: 2;
     padding: 25px;
-    background-color: #fff;
+    background-color: #f6a0d9;
     margin: 20px;
     margin-bottom: 0px;
-}
-.in-flex div{
+  }
+  
+  .in-flex div {
     padding: 25px;
-    background-color: #fff;
+    background-color: #8481e6;
     margin: 20px;
-}
+  }
+  
