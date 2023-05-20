@@ -81,8 +81,6 @@ function taller3() {
     }
   }
 }
-
-
 function taller4() {
   let numero = parseInt(prompt("Ingresa un número entero positivo mayor que 1:"));
 
@@ -105,8 +103,6 @@ function taller4() {
     console.log(`${numero} no es un número primo.`);
   }
 }
-
-
 function taller5(){
   let numero = parseInt(prompt("Ingresa un número entero mayor que cero:"));
 
