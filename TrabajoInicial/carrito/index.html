@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda en línea</title>
+  </head>
+  <body>
+    <section class="home">
+      <div class="in-flex">
+        <h1>Tienda en línea</h1>
+        <div class="product">
+          <img src="manubrio.png" alt="foto manubrio" />
+          <div class="product-info">
+            <h2>Manubrio</h2>
+            <p>Manubrio GW hecho de policarbono de fibras de vidrio.</p>
+            <p>Precio: $80.00</p>
+            <button onclick="addToCart(80)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="pacha.png" alt="Producto 2" />
+          <div class="product-info">
+            <h2>Pacha</h2>
+            <p>Pacha de acero inoxidable de 12 velocidades de Shimano</p>
+            <p>Precio: $75.00</p>
+            <button onclick="addToCart(75)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="sillin.png" alt="Producto 3" />
+          <div class="product-info">
+            <h2>Sillin profesional</h2>
+            <p>
+              Sillin profecional de marca Gato de la suerte, hecho con espuma
+              del himalaya
+            </p>
+            <p>Precio: $78.00</p>
+            <button onclick="addToCart(78)">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <body></body>
+      <div class="cart">
+        <h3>Total es: <span id="total">000.00</span></h3>
+      </div>
+    </section>
+    <script src="operaciones.js"></script>
+  </body>
+</html>
